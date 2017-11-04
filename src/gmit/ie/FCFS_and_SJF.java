@@ -1,12 +1,11 @@
 package gmit.ie;
 
-public class FCFS implements Comparable<FCFS>{		
-	//Variables
+public class FCFS_and_SJF implements Comparable<FCFS_and_SJF>{
+		
 	private int input, burst, waitTime, currentTime;
 	private int sortResult;
 
-	//Constructor with parameters
-	public FCFS(int input, int burst, int currentTime, int waitTime) {
+	public FCFS_and_SJF(int input, int burst, int currentTime, int waitTime) {
 		super();
 		this.input = input;
 		this.burst = burst;
@@ -14,7 +13,6 @@ public class FCFS implements Comparable<FCFS>{
 		this.waitTime = waitTime;
 	}//FCFS
 
-	//Getters and Setters
 	public int getInput() {
 		return input;
 	}
@@ -48,14 +46,17 @@ public class FCFS implements Comparable<FCFS>{
 		this.currentTime = currentTime;
 	}
 
-	//Display input, burst, start time and wait time
-	public void display(){		
+	public void display() 
+	{
+		
 		System.out.printf("%d \t%d \t%d \t\t%d\n", input, burst, currentTime, waitTime);
+
 	}//display
 	
 	@Override
-	public int compareTo(FCFS arg) {
-		// TODO Auto-generated method stub		
+	public int compareTo(FCFS_and_SJF arg) {
+		// TODO Auto-generated method stub
+		
 		sortResult = arg.burst;
 		
 		//ascending order
