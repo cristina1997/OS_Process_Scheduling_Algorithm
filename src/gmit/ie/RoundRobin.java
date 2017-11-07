@@ -1,17 +1,15 @@
 package gmit.ie;
 
 public class RoundRobin {
-	private int input, burst, waitTime, currentTime;
-	private int quant, remainTime;
+	private int input, burst, waitTime, currentTime, quant;
 	
-	public RoundRobin(int input, int burst, int currentTime, int waitTime, int quant, int remainTime) {
+	public RoundRobin(int input, int burst, int currentTime, int waitTime, int quant) {
 		super();
 		this.input = input;
 		this.burst = burst;
 		this.currentTime = currentTime;
 		this.waitTime = waitTime;
 		this.quant = quant;
-		this.remainTime = remainTime;
 	}
 
 	//Getters and Setters
@@ -54,12 +52,4 @@ public class RoundRobin {
 	public void setQuant(int quant) {
 		this.quant = quant;
 	}
-
-	public int getRemainTime() {
-		return remainTime;
-	}
-
-	public void setRemainTime(int remainTime) {
-		this.remainTime = remainTime;
-	}
-}
+}//RoundRobin
