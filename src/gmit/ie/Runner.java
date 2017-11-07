@@ -33,7 +33,7 @@ public class Runner {
 			burst = userInput.nextInt();
 			
 			fcfs[i] = new FCFS_and_SJF(input, burst, currentTime, waitTime);					
-			roundR[i] = new RoundRobin(input, burst, currentTime, waitTime, quantum, remainder);			
+			roundR[i] = new RoundRobin(input, burst, currentTime, waitTime, quantum);			
 			i++;
 		}	
 		
@@ -54,11 +54,11 @@ public class Runner {
 			case 1:			
 				roundR[0].setWaitTime(waitTime);
 				System.out.println("Enter quantum");  
-				quantum = userInput.nextInt();
-				
+				quantum = userInput.nextInt();				
 				
 				for (i = 0; i < processNo; i++) {
-					
+					roundR[i].setQuant(quantum);
+					remainder = roundR[i].getInput();
 				}
 				//remainder is burst - wait time
 				
@@ -125,9 +125,17 @@ public class Runner {
 		return fcfs[i].getWaitTime(); //waitTime is returned to be used again
 	}//calculateWaitTime
 	
-	public static void robinWaitTime(int wait, int i, RoundRobin[] roundR) {
+	public static void robinWaitTime(int wait, int i, int Q, RoundRobin[] roundR, int remaining) {
 		
-	}
+		
+		if (i != 0) {
+			/*wait += roundR[i-1].getBurst(); //the next wait becomes the previous burst
+			roundR[i].setWaitTime(wait); //waitTime is set to the wait value
+			roundR[i].setCurrentTime(wait); //currentTime is set to the wait value*/
+			
+		}
+		
+	}//robinWaitTime
 	
 	public static void displayMethod(int processCount, FCFS_and_SJF[] fcfs) {
 		//Heading for Name Burst Start Time and Wait Time
