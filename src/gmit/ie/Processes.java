@@ -23,7 +23,7 @@ public class Process {
         return remainingTime;
     }
     
-	public int getNumCycles(){
+    public int getNumCycles(){
         return numCycles;
     }
 
@@ -37,17 +37,17 @@ public class Process {
     } 
 
     public void setProcessName(String processName) {
-		this.processName = processName;
-	}
+        this.processName = processName;
+    }
 
-	public int getBurst() {
+    public int getBurst() {
         return burst;
     }
 
-	public void setBurst(int burst) {
-		this.burst = burst;
-		this.remainingTime = burst;
-	}
+    public void setBurst(int burst) {
+	this.burst = burst;
+	this.remainingTime = burst;
+    }
 
     public int getWaitTime() {
         return waitTime;
@@ -68,32 +68,29 @@ public class Process {
 
     public void display()
     {
-
         System.out.printf("%d \t%d \t%d \t\t%d\n", processName, burst, currentTime, waitTime);
-
     }//display
 
-	@Override
-	public String toString() {
-		return "Process [processName=" + processName + ", burst=" + burst + ", waitTime=" + waitTime + ", currentTime="
-				+ currentTime + ", remainingTime=" + remainingTime + "]";
-	}
+    @Override
+    public String toString() {
+        return "Process [processName=" + processName + ", burst=" + burst + ", waitTime=" + waitTime + ", currentTime=" 
+		+ currentTime + ", remainingTime=" + remainingTime + "]";
+    }
 
-	public static class burstComparator implements Comparator<Process> {
-
-		public int compare(Process p1, Process p2){
-			int burstTime1 = p1.getBurst();
-			int burstTime2 = p2.getBurst();
+    public static class burstComparator implements Comparator<Process> {
+        public int compare(Process p1, Process p2){
+            int burstTime1 = p1.getBurst();
+            int burstTime2 = p2.getBurst();
 			
-			if (burstTime1 == burstTime2)
-				return 0;
-			else if (burstTime1 > burstTime2)
-				return 1;
-			else
-				return -1;
-			}
+            if (burstTime1 == burstTime2)
+                return 0;
+            else if (burstTime1 > burstTime2)
+                return 1;
+            else
+                return -1;
+        }
 
-	}
+    }
     
     
 
