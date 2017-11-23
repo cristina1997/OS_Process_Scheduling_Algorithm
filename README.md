@@ -12,7 +12,7 @@ First and foremost, you will need to install [Eclipse](https://www.eclipse.org/d
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open your terminal/cmd in the folder you wish to download the repository and execute the following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` git clone https://github.com/cristina1997/go-problem-sheet-2-group-c-answers```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` git clone https://github.com/cristina1997/Process_Scheduling_Algorithm```
 
 **2. Eclipse**
 
