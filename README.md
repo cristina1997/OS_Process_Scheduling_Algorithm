@@ -23,6 +23,7 @@ First and foremost, you will need to install [Eclipse](https://www.eclipse.org/d
 **3. Copy Source Code**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to the folder where you downloaded the repository and copy the src folder.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste the src folder into the Java Project **in Eclipse** and to replace the empty src folder in there.
 
 **4 Run**
