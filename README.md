@@ -1,8 +1,8 @@
 # OS_Process_Scheduling_Algorithm
 This is a program in Java for	the	implementation	of	the	following	Process Scheduling Algorithm:
-*FCFS	
-*SJF	
-*Round	Robin	
+* FCFS	
+* SJF	
+* Round	Robin	
 
 ***
 ## Run
